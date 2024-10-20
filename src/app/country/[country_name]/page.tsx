@@ -1,7 +1,8 @@
 import Link from "next/link";
 import "../../../Style/globals.css"
 import NavBar from "@/components/NavBar";
-export default function countryname ({params}:any){
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+export default function countryname ({params}:{params:Params}){
     const countries : {
         name: string
         population: number
